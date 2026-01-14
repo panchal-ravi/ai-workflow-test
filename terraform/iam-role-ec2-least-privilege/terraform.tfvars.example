@@ -1,0 +1,13 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and customize for your environment
+
+aws_region  = "us-east-1"
+role_name   = "ec2-least-privilege-role"
+environment = "dev"
+
+tags = {
+  Project     = "Infrastructure"
+  Owner       = "DevOps"
+  CostCenter  = "Engineering"
+  Compliance  = "Required"
+}
