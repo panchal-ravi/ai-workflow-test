@@ -1,0 +1,13 @@
+# AWS Configuration
+aws_region = "us-east-1"
+
+# IAM Role Configuration
+role_name   = "ec2-least-privilege-role"
+external_id = "your-secure-external-id-here"
+
+# Tags
+tags = {
+  Environment = "production"
+  Project     = "infrastructure"
+  Team        = "devops"
+}
