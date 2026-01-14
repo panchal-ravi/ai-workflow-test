@@ -8,12 +8,29 @@ model: Claude Sonnet 4.5 (copilot)
 
 ```text
 $ARGUMENTS
-```/
+```
+
+
+### GitHub Issue Setup
+
+Before starting the workflow, create and configure a GitHub issue:
+
+1. **Create GitHub Issue**: 
+   - Use `gh issue create` with the user provided input 
+   - Title format: `[AGENT PROVISION] <descriptive-name>`
+   - Labels: `agent-driven`, `terraform`, `infrastructure`, `provisioning`
+   - Populate all fields from the template 
+2. **Validate Issue**: Confirm the GitHub issue is valid and contains all required information
+3. **Mark as In Progress**: Add `in-progress` label when starting work using `gh issue edit <issue-number> --add-label "in-progress"`
+4. **Update Issue with Progress**: Comment on the issue at the start and completion of each workflow stage with a short summary and link to the generated artifacts:
+   - Format: `🤖 **[Stage Name]** - [Started/Completed]: Brief summary`
+
+work on the GitHub issue autonomously
 
 ## Execution Workflow
-1. Create a new GH ISSUE for creating an AWS IAM role with access to only EC2 resources.
-2. Generate Terraform code to create the IAM role with least privilege access to EC2.
-3. Commit and update GH ISSUE with summary of changes made. 
-4. Request user to review and approve the code
-5. Upon approval, create a PULL REQUEST with the Terraform code changes.
-6. Delegate the PR review to Copilot coding agent using review-tf-design agent. Update PR with the review summary.
+1. Generate Terraform code as per the Git issue details.
+2. Commit and update Git issue. 
+3. Request user to review and approve the code
+4. Upon approval, create a Git PR with the Terraform code changes.
+5. Delegate and assign the PR review to Copilot coding agent using review-tf-design agent. 
+6. Update PR with the Copilot review summary and findings.
