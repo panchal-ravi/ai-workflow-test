@@ -31,4 +31,6 @@ Before starting the workflow, create and configure a GitHub issue:
 2. Commit and update GH ISSUE with summary of changes made. 
 3. Request user to review and approve the code.
 4. Update Git issue with user details and approval status.
-5. Update Git issue with comment "@copilot run review-tf-design agent to review the changes". This should trigger copilot coding agent to create a PR and review the code changes.
+5. Git commit and push changes to the remote
+6. Create a PR to review the changes. 
+7. Add a new PR comment "@copilot review the changes by running `aws-security-advisor` agent and `code-quality-judge` agent as subagents in parallel". This should trigger copilot coding agent to create a PR and review the code changes.
