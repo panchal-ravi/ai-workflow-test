@@ -33,4 +33,3 @@ Before starting the workflow, create and configure a GitHub issue:
 4. Update Git issue with user details and approval status.
 5. Git commit and push changes to the remote
 6. Create a PR to review the changes. 
-7. Add a new PR comment "@copilot review the changes by running `aws-security-advisor` agent and `code-quality-judge` agent as subagents in parallel". This should trigger copilot coding agent to create a PR and review the code changes.
