@@ -1,0 +1,12 @@
+# Example variable values for sandbox testing
+# Copy this file to sandbox.auto.tfvars and populate with actual values
+
+role_name   = "ec2-compute-role"
+environment = "dev"
+aws_region  = "us-east-1"
+
+tags = {
+  Owner       = "platform-team"
+  CostCenter  = "engineering"
+  Application = "compute-infrastructure"
+}
