@@ -2,7 +2,7 @@
 
 ### When PR Review is Requested
 
-1. **Load Constitution**: Read `.specify/memory/constitution.md` to understand project standards and requirements
+1. **Load Constitution**: Read `/.specify/memory/constitution.md` to understand project standards and requirements
 2. **Review Scope**: Evaluate the PR changes against:
    - Constitution compliance (MUST/SHOULD/MAY requirements)
    - Security best practices
