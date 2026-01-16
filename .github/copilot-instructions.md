@@ -2,8 +2,6 @@
 
 ### When PR Review is Requested
 
-**ONLY** when an agent explicitly requests a PR review, follow these steps:
-
 1. **Load Constitution**: Read `.specify/memory/constitution.md` to understand project standards and requirements
 2. **Review Scope**: Evaluate the PR changes against:
    - Constitution compliance (MUST/SHOULD/MAY requirements)
@@ -41,9 +39,4 @@
 
 ### Recommendations
 - [Actionable improvements with before/after examples]
-
-### Approval Status
-- [ ] Approve
-- [ ] Request Changes
-- [ ] Comment Only
 ```
